@@ -20,3 +20,6 @@ EC2 Console → Select Instance → Actions → Security → **Modify IAM Role**
 Selected: `EC2-S3-ReadOnly`
 
 ### 4. Connected to EC2 via SSH
+### 5. Verified Role Access to S3 from EC2
+
+Checked if AWS CLI is available:
