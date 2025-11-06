@@ -1,0 +1,19 @@
+Output showed no error. This confirms:
+- Authentication worked
+- Role credentials were used automatically
+- No access keys stored on the instance
+
+## Key Understanding
+
+| Feature | Access Keys | IAM Role |
+|--------|-------------|----------|
+| Stored on server | Yes | No |
+| Risk of leak | High | Low |
+| Rotation | Manual | Automatic |
+| Best practice | Not recommended | Recommended |
+
+### Why IAM Roles are Better
+IAM roles provide temporary, automatically rotating credentials. Nothing is stored on the server, so there is nothing to leak. This makes them more secure than long-term access keys.
+
+## Conclusion
+EC2 successfully accessed S3 using IAM Role permissions without configuring access keys. This is the standard method used in real Cloud and DevOps environments.
